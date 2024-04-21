@@ -9,7 +9,7 @@
 @import url('./header.css');
 
 :root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
@@ -23,3 +23,121 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
+
+.search-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.input {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+
+  padding: 8px 16px;
+  min-width: 272px;
+  border-radius: 4px;
+  border: 1px solid #808080;
+  transition: border-color 250ms ease-in-out;
+}
+
+.input:hover,
+.input:focus {
+  border-color: #000000;
+}
+
+.submit-btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  color: #ffffff;
+  background-color: #4e75ff;
+  transition: background-color 250ms ease-in-out;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.gallery-item {
+  margin-top: 10px;
+  width: 360px;
+  border: 1px solid black;
+}
+
+.gallery-item img {
+  width: 100%;
+  max-height: 180px;
+  object-fit: cover;
+}
+
+.card-info {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+}
+
+.loader-backdrop {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 5px solid #FFF;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+.hidden {
+  display: none;
+}
+
+.text-span {
+  font-weight: 600;
+}
+
+.text {
+  font-weight: lighter;
+  text-align: center;
+}
+
+.load-more-container {
+  display: flex;
+  justify-content: center;
+}
+.load-more {
+  padding: 8px 16px;
+    border: none;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    color: #ffffff;
+    background-color: #4e75ff;
+    transition: background-color 250ms ease-in-out;
+    margin-top: 10px;
+  }
